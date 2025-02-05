@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Website of Love</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="valentine">
+      <div class="valentine__wrapper">
+        <!-- hero section -->
+        <section class="valentine__hero flex-col">
+          <h1 class="section-font-size">🌹 Website of Love 💖</h1>
+          <p class="paragraph">
+            Welcome to the Website of Love, a heartfelt tribute to someone
+            special. This simple yet beautiful webpage will feature romantic
+            elements, sweet messages, and an interactive section to express
+            feelings of love and appreciation.
+          </p>
+        </section>
+
+        <!-- List of roses -->
+        <section class="valentine__roses flex-col">
+          <h2 class="section-font-size">🌹 Beautiful Roses 🌹</h2>
+          <p class="paragraph">
+            A symbol of love, passion, and timeless beauty. These roses
+            represent the depth of our feelings, blooming with every moment we
+            cherish together.
+          </p>
+          <div class="valentine__images">
+            <img
+              src="/assets/rose1.jpg"
+              alt="This is a type of a rose"
+              aria-label="a red rose"
+              class="valentine__image"
+            />
+
+            <img
+              src="/assets/rose3.jpg"
+              alt="This is a type of a rose"
+              aria-label="a red rose"
+            />
+            <img
+              src="/assets/rose2.jpg"
+              alt="This is a type of a rose"
+              aria-label="a red rose"
+            />
+            <img
+              src="/assets/rose3.jpg"
+              alt="This is a type of a rose"
+              aria-label="a red rose"
+            />
+          </div>
+        </section>
+
+        <!-- list of valentine day -->
+
+        <section class="valentine__days">
+          <h2 class="section-font-size">🌹 Valentine Days</h2>
+          <ul>
+            <li class="paragraph1">Rose Day - February 7</li>
+            <li class="paragraph1">Propose Day - February 8</li>
+            <li class="paragraph1">Chocolate Day Febrruary 9</li>
+            <li class="paragraph1">Teddy Day - February 10</li>
+            <li class="paragraph1">Promise Day - February 11</li>
+            <li class="paragraph1">Hug Day - February 12</li>
+            <li class="paragraph1">Kiss Day - February 13</li>
+            <li class="paragraph1">Valentine's Day - February 14</li>
+          </ul>
+        </section>
+
+        <section class="valentine__personalInfo">
+          <h2 class="section-font-size">🌹 Personal Information</h2>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Name:</th>
+                <th>Favourite color:</th>
+                <th>Favourite song:</th>
+                <th>Favourite dish:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sangam Mishra</td>
+                <td>Black</td>
+                <td>Panko pat by sabin</td>
+                <td>Buff mo-mo</td>
+              </tr>
+              <tr>
+                <td>Sangam Mishra</td>
+                <td>Black</td>
+                <td>Panko pat by sabin</td>
+                <td>Buff mo-mo</td>
+              </tr>
+              <tr>
+                <td>Sangam Mishra</td>
+                <td>Black</td>
+                <td>Panko pat by sabin</td>
+                <td>Buff mo-mo</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- form section -->
+        <section class="valentine__date">
+          <h2 class="section-font-size">🌹 Pick a date and Person</h2>
+          <form action="#">
+            <label for="date_picker">
+              <span>Pick a date</span>
+              <input
+                type="date"
+                name="date"
+                class="input"
+                placeholder="Pick a date for date"
+              />
+            </label>
+
+            <!-- choose a gender -->
+            <label for="gender">Gender</label>
+            <label for="male">
+              <input type="radio" name="gender" />
+              <span>Male</span>
+            </label>
+
+            <label for="female">
+              <input type="radio" />
+              <span> Female </span>
+            </label>
+
+            <!-- select a person -->
+            <label for="person">Select a Person</label>
+            <select name="person" id="person">
+              <option value="select">Select</option>
+              <option value="person a">Person a</option>
+              <option value="person b">Person b</option>
+              <option value="person c">Person c</option>
+            </select>
+
+            <!-- textarea -->
+            <label for="message">Write some message</label>
+            <textarea name="sweet-message" id="message"></textarea>
+            <!-- submit button -->
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

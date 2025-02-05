@@ -1,0 +1,182 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Funnel Sans", serif;
+  font-optical-sizing: auto;
+}
+
+.valentine {
+  .valentine__wrapper {
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  /* for hero section of the website */
+  .valentine__hero {
+    height: 500px;
+    width: 100%;
+    padding-block: 50px;
+  }
+
+  .valentine__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-inline: 0;
+
+    img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      padding-inline: 80px;
+
+      img {
+        width: 300px;
+      }
+    }
+  }
+
+  .valentine__days {
+    margin-block: 50px;
+    ul {
+      list-style: circle;
+      padding-inline: 40px;
+      margin-top: 30px;
+
+      li {
+        line-height: 30px;
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding-inline: 80px;
+      }
+    }
+  }
+
+  .valentine__personalInfo {
+    table {
+      width: 100%;
+      height: 400px;
+      text-align: center;
+      margin-top: 30px;
+      tr,
+      th {
+        padding-inline: 10px;
+        padding-block: 10px;
+      }
+    }
+  }
+
+  .valentine__date {
+    margin-block: 40px;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    h2 {
+      margin-bottom: 30px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    form {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      gap: 20px;
+      border: 1px solid grey;
+      border-radius: 8px;
+      padding-inline: 20px;
+      padding-block: 20px;
+
+      li {
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 600px;
+      }
+    }
+  }
+
+  .input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  #person {
+    padding: 10px;
+  }
+
+  #message {
+    height: 150px;
+  }
+
+  button {
+    width: fit-content;
+    padding-inline: 100px;
+    padding-block: 15px;
+
+    &:hover {
+      transition: all 300ms ease-in-out;
+      background-color: orangered;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+/* reusable blocks of css */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-font-size {
+  font-size: 35px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+  }
+}
+
+.paragraph {
+  width: 100%;
+  font-size: 18px;
+  padding-left: 0;
+  text-wrap: wrap;
+  line-height: 35px;
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+    padding-left: 80px;
+  }
+}
+
+@keyframes colorChange {
+  from {
+    color: black;
+  }
+  to {
+    color: red;/
+  }
+}
