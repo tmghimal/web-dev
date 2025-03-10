@@ -82,14 +82,14 @@
 
   .valentine__date {
     margin-block: 40px;
-    animation-name: colorChange;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
+    
     h2 {
       margin-bottom: 30px;
       text-align: center;
       text-transform: capitalize;
+      animation-name: colorChange;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
 
     form {
