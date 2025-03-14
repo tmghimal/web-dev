@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Assignment</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Javascript Assignment</h1>
+
+      <div class="evenOdd">
+        <h2>1. Even or Odd Checker</h2>
+        <p>
+          Write a JavaScript function that takes a number as input and checks
+          whether it is even or odd using an if-else statement.
+        </p>
+        <input
+          type="number"
+          id="inputNumber"
+          value="0"
+          placeholder="Enter a number"
+          aria-label="This is an input field to enter any even or odd number"
+        />
+        <button class="result">Check Result</button> <br />
+        <div class="eoResult">
+          <span class="evenOddResult">Answer: </span>
+          <span class="evenOddResult">NAN</span>
+        </div>
+      </div>
+
+      <!-- Multiplication table generator -->
+      <div>
+        <h2>Multiplication Table</h2>
+        <p>
+          Write a JavaScript function that takes a number as input and prints
+          its multiplication table (up to 10) using a for loop.
+        </p>
+        <input
+          type="number"
+          placeholder="Enter a number"
+          id="number"
+          required
+        />
+        <button id="generate">Generate Multiplication</button>
+        <div id="error"></div>
+        <table border="1" style="width: 100%">
+          <thead>
+            <th>Multiplication of</th>
+            <th>X</th>
+            <th>Multiplier</th>
+            <th>Result</th>
+          </thead>
+          <tbody id="items"></tbody>
+        </table>
+      </div>
+
+      <!-- FizzBuzz -->
+      <div>
+        <h2>Fizz Buzz</h2>
+        <p>
+          Write a JavaScript function that prints numbers from 1 to 20. However:
+        </p>
+        <ul>
+          <li>If the number is divisible by 3, print "Fizz"</li>
+          <li>If the number is divisible by 5, print "Buzz"</li>
+          <li>If the number is divisible by both 3 and 5, print "FizzBuzz"</li>
+          <li>Otherwise, print the number itself.</li>
+          <li>Steps to complete the task.</li>
+          <li>Use a loop (for loop) to iterate from 1 to 20.</li>
+          <li>Use conditional statements (if-else) to check divisibility.</li>
+          <li>Print the correct output based on the conditions.</li>
+        </ul>
+        <button id="fizzResult">show result</button>
+        <div id="output"></div>
+      </div>
+      <!-- Right Angle Triangle -->
+      <div>
+        <h1>Right-Angled Triangle</h1>
+        <p>
+          Write a JavaScript function to print the following pattern using a for
+          loop: Steps to Complete the Task: Use a loop (for loop) to iterate n
+          times. Use a nested loop or string concatenation to print * in
+          increasing order. Print the pattern line by line. 📌 Example Output
+          (for n = 5):
+        </p>
+        <input
+          type="number"
+          placeholder="Enter a number"
+          required
+          id="patternNumber"
+        />
+        <button id="triangle">Generate Triangle</button>
+        <ul id="startItems"></ul>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
